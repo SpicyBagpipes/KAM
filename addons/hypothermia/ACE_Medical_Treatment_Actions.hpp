@@ -39,7 +39,7 @@ class ACE_Medical_Treatment_Actions {
         category = "examine";
         allowedSelections[] = {"Head"};
         treatmentTime = 3;
-        condition = "true";
+        condition = QUOTE(GVAR(hypothermiaActive));
         callbackSuccess = QFUNC(checkTemperature);
     };
 };
